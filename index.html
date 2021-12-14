@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Piedra, papel o tijera!</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <main>
-        <h1>juego piedra, papel y tijera</h1>
-        <h2>Introduce aquí tu jugada:</h2>
+        <h1 class="title">juego piedra, papel y tijera</h1>
+        <h2 class="subtitle">Introduce aquí tu jugada:</h2>
         <form action="" class="controls">
             <select class="controls__options js_select_move" name="move_selected" id="move_selected">
-                <option value="Piedra"></option>
-                <option value="Papel"></option>
-                <option value="Tijera"></option>
+                <option disabled selected>Seleccione su jugada</option>
+                <option value="Piedra">Piedra</option>
+                <option value="Papel">Papel</option>
+                <option value="Tijera">Tijera</option>
             </select>
             <input class="controls__button js_button" type="submit" value="Jugar">
         </form>
-        <section>
-            <span class="game_message">¡Vamos a jugar!</span>
-            <h3 class="player">Jugador</h3>
-            <h3 class="computer">Computadora</h3>
+        <section class="game__results">
+            <div class="game__message">¡Vamos a jugar!</div>
+            <h3 class="game__text player">Jugador</h3>
+            <h3 class="game__text computer">Computadora</h3>
         </section>
     </main>
-    <script src=""></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
