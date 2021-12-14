@@ -6,6 +6,11 @@ const updateButton = document.querySelector(".js_button");
 const selectMove = document.querySelector(".js_select_move");
 const gameResult = document.querySelector(".js_game_result");
 const moves = ["Piedra", "Papel", "Tijera"];
+let userCounter = 0;
+let compCounter = 0;
+const player = document.querySelector(".js_player");
+const computer = document.querySelector(".js_computer");
+
 // 2. Funciones:
 
 function getRandomNumber(max) {
@@ -28,24 +33,38 @@ function handleClickUpdate(event) {
   const userMove = selectMove.value;
   const compMove = computerMove();
   if (compMove === "Tijera" && userMove === "Tijera") {
-    gameResult.innerHTML = "Empate";
+    tie();
   } else if (compMove === "Piedra" && userMove === "Tijera") {
-    gameResult.innerHTML = "Gana computadora";
+    computerWins();
   } else if (compMove === "Papel" && userMove === "Tijera") {
-    gameResult.innerHTML = "Gana usuario";
+    userWins();
   } else if (compMove === "Tijera" && userMove === "Piedra") {
-    gameResult.innerHTML = "Gana usuario";
+    userWins();
   } else if (compMove === "Piedra" && userMove === "Piedra") {
-    gameResult.innerHTML = "Empate";
+    tie();
   } else if (compMove === "Papel" && userMove === "Piedra") {
-    gameResult.innerHTML = "Gana computadora";
+    computerWins();
   } else if (compMove === "Tijera" && userMove === "Papel") {
-    gameResult.innerHTML = "Gana computadora";
+    computerWins();
   } else if (compMove === "Piedra" && userMove === "Papel") {
-    gameResult.innerHTML = "Gana usuario";
+    userWins();
   } else if (compMove === "Papel" && userMove === "Papel") {
-    gameResult.innerHTML = "Empate";
+    tie();
   }
+}
+
+function tie() {
+  gameResult.innerHTML = "Empate";
+}
+function userWins() {
+  gameResult.innerHTML = "Gana usuario";
+  userCounter++;
+  player.innerHTML = "Jugador: " + userCounter;
+}
+function computerWins() {
+  gameResult.innerHTML = "Gana computadora";
+  compCounter++;
+  computer.innerHTML = "Computadora: " + compCounter;
 }
 
 // 3. Código que se ejecuta cuando se carga la página
