@@ -13,7 +13,7 @@
     <main>
         <h1 class="title">juego piedra, papel y tijera</h1>
         <h2 class="subtitle">Introduce aquí tu jugada:</h2>
-        <form action="" class="controls">
+        <form class="controls">
             <select class="controls__options js_select_move" name="move_selected" id="move_selected">
                 <option disabled selected>Seleccione su jugada</option>
                 <option value="Piedra">Piedra</option>
@@ -21,11 +21,13 @@
                 <option value="Tijera">Tijera</option>
             </select>
             <input class="controls__button js_button" type="submit" value="Jugar">
+            <input class="controls__button js_btn_restart" type="submit" value="Reiniciar">
         </form>
         <section class="game__results">
-            <div class="game__message js_game_result">¡Vamos a jugar!</div>
+            <p class="game__message js_game_result">¡Vamos a jugar!</p>
             <h3 class="game__text player js_player">Jugador: 0</h3>
             <h3 class="game__text computer js_computer">Computadora: 0</h3>
+            <p class="numbers js_game_moves">Número de jugadas: 0</p>
         </section>
     </main>
     <script src="js/main.js"></script>

@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .title {
@@ -32,6 +32,10 @@
   background-color: turquoise;
   border-radius: 5px;
 }
+.disabled__button {
+  background-color: gainsboro;
+  color: gray;
+}
 .game__results {
   display: flex;
   flex-direction: column;
@@ -40,9 +44,9 @@
   margin-top: 20px;
 }
 .game__message {
-  width: 150px;
-  height: 25px;
-  padding: 3px;
+  width: 250px;
+  height: 40px;
+  padding: 8px;
   background-color: turquoise;
   margin-bottom: 20px;
   color: white;
@@ -50,6 +54,10 @@
   font-size: 14px;
   text-align: center;
   border-radius: 5px;
+}
+.numbers {
+  font-size: 25px;
+  color: turquoise;
 }
 .game__text {
   font-size: 14px;
