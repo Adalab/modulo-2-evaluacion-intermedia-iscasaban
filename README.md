@@ -1,4 +1,4 @@
-⛰️ 📄 ✂️ # ¡Piedra, papel o tijera!
+# ¡Piedra, papel o tijera! ⛰️ 📄 ✂️
 
 El ejercicio consiste en desarrollar el juego "Piedra, Papel y Tijera".
 
