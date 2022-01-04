@@ -1,5 +1,4 @@
-# ¡Piedra, papel o tijera!
-:rock: :page_facing_up:	:scissors:
+# ¡Piedra, papel o tijera! ⛰️ 📄 ✂️
 
 El ejercicio consiste en desarrollar el juego "Piedra, Papel y Tijera".
 
